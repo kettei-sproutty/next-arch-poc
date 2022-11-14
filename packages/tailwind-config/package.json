@@ -1,0 +1,12 @@
+{
+  "name": "tailwind-config",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4",
+    "daisyui": "^2.40.1",
+    "postcss": "^8.4.19",
+    "autoprefixer": "^10.4.13"
+  }
+}
