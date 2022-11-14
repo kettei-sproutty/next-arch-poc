@@ -13,6 +13,9 @@ coverage
 out/
 build
 
+# prisma
+dist
+
 # misc
 .DS_Store
 *.pem
