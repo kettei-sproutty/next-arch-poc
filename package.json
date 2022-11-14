@@ -10,16 +10,38 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "install:hooks": "npx simple-git-hooks"
   },
+  "dependencies": {},
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
     "prettier": "latest",
+    "simple-git-hooks": "^2.8.1",
+    "lint-staged": "^13.0.3",
     "turbo": "latest"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=16.14.0"
   },
-  "dependencies": {},
-  "packageManager": "pnpm@7.14.0"
+  "packageManager": "pnpm@7.14.0",
+  "prettier": {
+    "arrowParens": "avoid",
+    "jsxSingleQuote": true,
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "useTabs": false,
+    "trailingComma": "all"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,md}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged",
+    "preserveUnused": true
+  }
 }

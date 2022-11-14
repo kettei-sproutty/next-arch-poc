@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "EditorConfig.EditorConfig",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-typescript-next",
+    "csstools.postcss",
+    "Prisma.prisma",
+    "dbaeumer.vscode-eslint",
+    "clinyong.vscode-css-modules"
+  ]
+}
