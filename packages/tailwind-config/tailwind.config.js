@@ -1,9 +1,11 @@
 module.exports = {
   plugins: [require('daisyui')],
   content: [
-    `pages/**/*.{js,ts,jsx,tsx}`,
+    `../apps/**/app/**/*.{js,ts,jsx,tsx}`,
+    `app/**/*.{js,ts,jsx,tsx}`,
+    `../components/**/app/**/*.{js,ts,jsx,tsx}`,
     `components/**/*.{js,ts,jsx,tsx}`,
-    '../../packages/**/*.{js,ts,jsx,tsx}',
+    '../../packages/**/src/*.{js,ts,jsx,tsx}',
   ],
   daisyui: {
     themes: [
