@@ -9,13 +9,13 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "swc src",
     "clean": "rimraf .turbo node_modules dist",
     "db:migrate:deploy": "prisma migrate deploy",
     "db:migrate:dev": "prisma migrate dev",
     "db:push": "prisma db push",
     "db:seed": "tsx src/seed.ts",
-    "dev": "tsup --watch",
+    "dev": "swc src --watch --out-dir dist",
     "format": "prisma format",
     "generate": "prisma generate",
     "lint": "TIMING=1 eslint \"src/**/*.ts\"",
@@ -32,7 +32,9 @@
     "prisma": "^4.6.1",
     "rimraf": "^3.0.2",
     "tsconfig": "workspace:*",
-    "tsup": "^6.5.0",
+    "@swc/core": "^1.3.17",
+    "@swc/cli": "^0.1.57",
+    "chokidar": "^3.5.3",
     "tsx": "^3.12.1",
     "typescript": "^4.8.4",
     "@types/node": "^18.11.9"
