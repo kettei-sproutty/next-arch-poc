@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/chrome-manifest",
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "Leadership",
+  "short_name": "next",
+  "icons": {
+    "512": "/icons/512px.png"
+  },
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
