@@ -24,6 +24,7 @@ importers:
       eslint-config-custom: workspace:*
       react: ^18.2.0
       react-dom: ^18.2.0
+      tailwind-config: workspace:*
       tsconfig: workspace:*
       typescript: ^4.9.3
       ui: workspace:*
@@ -36,6 +37,7 @@ importers:
       '@types/react': 18.0.25
       '@types/react-dom': 18.0.9
       eslint-config-custom: link:../../packages/eslint-config-custom
+      tailwind-config: link:../../packages/tailwind-config
       tsconfig: link:../../packages/tsconfig
       typescript: 4.9.3
 
